@@ -1,0 +1,3 @@
+The script uses strings from Sysinternals (Microsoft).
+Download it from https://docs.microsoft.com/en-us/sysinternals/downloads/strings
+Unzip the strings.zip file and put file strings.exe in the same directory that log4jscanLite.ps1 script
