@@ -7,7 +7,7 @@
 # Created:     15/12/2021
 # -------------------------------------------------------------------------------
 
-# Loj4j classpath reference: https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/
+# Loj4j class reference: https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/
 $log4j="logging/log4j/core/lookup/JndiLookup.class"
 
 
@@ -20,7 +20,7 @@ ForEach ($Drive in $Drives) {
     ForEach ($file in $files) 
         {
         $results=""
-        #Use strings from sysinternals to find classpath
+        #Use strings from sysinternals to find class
         $results = .\strings.exe -nobanner -accepteula $file.FullName | findstr /i $log4j
         if (-not ([string]::IsNullOrEmpty($results)))
             {
