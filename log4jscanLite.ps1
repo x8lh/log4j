@@ -21,7 +21,7 @@ ForEach ($Drive in $Drives) {
         {
         $results=""
         #Use strings from sysinternals to find classpath
-        $results = .\strings64.exe -nobanner -accepteula $file.FullName | findstr /i $log4j
+        $results = .\strings.exe -nobanner -accepteula $file.FullName | findstr /i $log4j
         if (-not ([string]::IsNullOrEmpty($results)))
             {
             #Write results, change to shared path in case of automation 
