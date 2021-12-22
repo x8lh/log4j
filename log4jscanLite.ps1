@@ -24,13 +24,13 @@ ForEach ($Drive in $Drives) {
         $results = .\strings.exe -nobanner -accepteula $file.FullName | findstr /i $log4j
         if (-not ([string]::IsNullOrEmpty($results)))
             {
-            #Write results, change to shared path in case of automation 
+            #Write results 
             "[Vulnerable]" + $file.FullName | Out-File -append  .\jars.txt
             "[Vulnerable]" + $file.FullName | Write-Host
 
             }
         }
 }
-#Wait for user imput to end (remove in case of automation)
+#Wait for user input to end 
 Write-Host -NoNewLine '[END] Press any key to continue...';
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
