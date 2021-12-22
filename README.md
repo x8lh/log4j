@@ -8,6 +8,6 @@ It uses the strings executable from Microsoft/Sysinternals, you need to download
     
  - Run:
      Execute log4jscanLite.ps1
-     Wait for results on console or read results on output file jars.txt
+     Wait for results on console or read results on output file jars.txt.\n
      If there are some jar/war/ear file vulnerable, you will gate a log like:
         [Vulnerable] somepath\somefile.jar
