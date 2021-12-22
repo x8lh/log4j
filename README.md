@@ -10,6 +10,7 @@ It uses the strings executable from Microsoft/Sysinternals, you need to download
  - Run:<br />
      Read permissions for files to scan are needed<br />
      Execute log4jscanLite.ps1<br />
+     Some read permission errors may appear on some files. Do not panic, analyze them later.<br />
      Wait for results on console or read results on output file jars.txt.<br />
      If there are some jar/war/ear file vulnerable, you will gate a log like:<br />
         [Vulnerable] somepath\somefile.jar<br />
